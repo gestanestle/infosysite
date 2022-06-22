@@ -53,6 +53,8 @@ MIDDLEWARE = [
     
 ]
 
+CSRF_TRUSTED_ORIGINS=['https://infosysite.azurewebsites.net']
+
 ROOT_URLCONF = 'room201a.urls'
 
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'app/templates')
@@ -157,3 +159,4 @@ MESSAGE_TAGS = {
         messages.WARNING: 'alert-warning',
         messages.ERROR: 'alert-danger',
  }
+
